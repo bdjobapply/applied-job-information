@@ -62,19 +62,19 @@ form.addEventListener("submit", async (e) => {
 
   // === CSV line (no quotes, only commas) ===
   const csvLine = [
-    data.applyDate,
-    data.circularDate,
-    data.orgName,
-    data.postName,
-    data.postCount,
-    data.grade,
-    data.priority,
-    data.applyLink,
-    data.paymentAmount,
-    data.smsNumber,
-    data.userId,
-    data.password
-  ].join(",");
+  data.applyDate,
+  data.circularDate,
+  data.orgName,
+  data.postName,
+  data.postCount,
+  data.grade,
+  data.priority,
+  data.applyLink,
+  data.paymentAmount,
+  data.smsNumber,
+  data.userId,
+  data.password
+].map(value => `"${value}"`).join(",");
 
   // === Telegram text message ===
   const textMessage =
