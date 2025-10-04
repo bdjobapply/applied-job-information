@@ -205,3 +205,31 @@ legend {
     font-size: 16px;
   }
 }
+/* ==== Copy Button Section ==== */
+.copy-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px 0;
+  background: #f8f9fa;
+}
+
+.copy-section button {
+  background: linear-gradient(135deg, #4bc970, #3ac162);
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.copy-section button:hover {
+  background: linear-gradient(135deg, #3ac162, #36b45e);
+  transform: translateY(-2px);
+}
+
